@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="hero-section">
+        <div class="container text-center">
+            <h1 class="display-4 fw-bold mb-4"><i class="fas fa-utensils me-2"></i>Recipe Finder</h1>
+            <p class="lead mb-4">Discover delicious recipes for any occasion</p>
+            
+            <div class="search-container">
+                <div class="input-group mb-3">
+                    <input type="text" id="searchInput" class="form-control form-control-lg" placeholder="Search for a recipe...">
+                    <button class="btn btn-search text-white" type="button" onclick="searchRecipes()">
+                        <i class="fas fa-search me-1"></i> Search
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="results" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4"></div>
+        
+        <div id="loading" class="text-center my-5" style="display: none;">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+            <p class="mt-2">Finding delicious recipes...</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <h4>Recipe Finder</h4>
+            <p>Find and share your favorite recipes with the world</p>
+            <div class="social-icons mb-3">
+                <a href="#" class="text-white mx-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white mx-2"><i class="fab fa-pinterest"></i></a>
+            </div>
+            <p class="mb-0">&copy; 2025 Recipe Finder. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

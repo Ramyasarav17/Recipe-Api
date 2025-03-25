@@ -1,0 +1,155 @@
+body {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+}
+
+.hero-section {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 3rem 0;
+    margin-bottom: 2rem;
+    border-radius: 0 0 20px 20px;
+}
+
+.recipe-card {
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    height: 100%;
+}
+
+.recipe-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.search-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.btn-search {
+    background-color: #ff6b6b;
+    border: none;
+    padding: 10px 25px;
+}
+
+.btn-search:hover {
+    background-color: #ff5252;
+}
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 2rem 0;
+    margin-top: 3rem;
+}
+
+/* Recipe Details Page Styles */
+.recipe-header {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.recipe-image {
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.recipe-title {
+    color: #343a40;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.recipe-meta {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #6c757d;
+}
+
+.ingredients-card, .instructions-card, .nutrition-facts {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.card-title {
+    color: #343a40;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #ff6b6b;
+}
+
+.ingredient-item, .instruction-step {
+    margin-bottom: 0.8rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.ingredient-item::before {
+    content: "•";
+    color: #ff6b6b;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.instruction-step {
+    counter-increment: step-counter;
+    margin-bottom: 1.5rem;
+}
+
+.instruction-step::before {
+    content: counter(step-counter);
+    color: white;
+    background: #ff6b6b;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    left: -5px;
+    line-height: 25px;
+    font-size: 0.8rem;
+}
+
+.back-button {
+    background-color: #6c757d;
+    border: none;
+    margin-bottom: 2rem;
+}
+
+.back-button:hover {
+    background-color: #5a6268;
+}
+
+.nutrition-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed #dee2e6;
+}
