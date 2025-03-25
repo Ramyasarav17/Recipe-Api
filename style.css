@@ -1,15 +1,29 @@
 body {
-    background-color: #f8f9fa;
+    background: url(./assets/herobg.jpg);
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero-section {
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
+    background: url(./assets/herobg.jpg);
+    color: #ffc107;
     padding: 3rem 0;
     margin-bottom: 2rem;
     border-radius: 0 0 20px 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
+
+
+.lead {
+    font-weight: bolder;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.main {
+    flex: 1;
+}
+
 
 .recipe-card {
     transition: transform 0.3s;
@@ -36,20 +50,22 @@ body {
 }
 
 .btn-search {
-    background-color: #ff6b6b;
+    background-color: #ffc107;
+    color: black;
     border: none;
     padding: 10px 25px;
 }
 
 .btn-search:hover {
-    background-color: #ff5252;
+    background-color: yellow;
+    color: black;
 }
-
 .footer {
     background-color: #343a40;
     color: white;
     padding: 2rem 0;
-    margin-top: 3rem;
+    margin-top: auto;
+    width: 100%;
 }
 
 /* Recipe Details Page Styles */
@@ -135,6 +151,11 @@ body {
     left: -5px;
     line-height: 25px;
     font-size: 0.8rem;
+}
+#loading {
+    color: #ffc107;
+    font-weight: bolder;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
 .back-button {
