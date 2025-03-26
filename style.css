@@ -115,7 +115,7 @@ body {
     font-weight: 600;
     margin-bottom: 1.5rem;
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid #ff6b6b;
+    border-bottom: 2px solid #ffc107;
 }
 
 .ingredient-item, .instruction-step {
@@ -159,13 +159,10 @@ body {
 }
 
 .back-button {
-    background-color: #6c757d;
-    border: none;
-    margin-bottom: 2rem;
+margin-top: 30px;
 }
 
 .back-button:hover {
-    background-color: #5a6268;
 }
 
 .nutrition-item {

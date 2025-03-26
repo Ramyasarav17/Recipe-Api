@@ -46,7 +46,7 @@ function displayResults(recipes) {
                 <div class="card-body">
                     <h5 class="card-title">${recipe.title}</h5>
                     <div class="d-flex justify-content-between align-items-center">
-                        <button onclick="viewRecipe(${recipe.id})" class="btn btn-sm btn-outline-primary">View Recipe</button>
+                        <button onclick="viewRecipe(${recipe.id})" class="btn btn-sm btn-outline-warning">View Recipe</button>
                     </div>
                 </div>
             </div>
